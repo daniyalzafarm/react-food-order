@@ -19,6 +19,7 @@ const Cart = (props) => {
     <ul className={style["cart-items"]}>
       {cartCtx.items.map((item) => (
         <CartItem
+          key={item.id}
           name={item.name}
           amount={item.amount}
           price={item.price}

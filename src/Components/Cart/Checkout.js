@@ -48,6 +48,12 @@ const Checkout = (props) => {
     }
 
     // Submit Cart Data
+    props.onConfirm({
+      name: enteredName,
+      street: enteredStreet,
+      postal: enteredPostal,
+      city: enteredCity,
+    });
   };
 
   const nameControlClasses = `${style.control} ${
